@@ -86,44 +86,62 @@ const Landing = () => {
       {/* Hero Section */}
       <Hero />
 
-      {/* Features Section */}
+      {/* Key Features Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Everything You Need to{" "}
+              Free{" "}
               <span className="bg-gradient-to-r from-golden to-emerald bg-clip-text text-transparent">
-                Create Amazing Content
+                Social Media Creator
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              PostMux combines powerful AI technology with intuitive design tools to help you create 
-              professional social media content that drives engagement.
+              Create, manage, and share your social media posts with our completely free platform.
+              No hidden costs, no premium features - everything you need is included.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="card-feature group">
-                <CardContent className="p-6">
-                  <div className={`inline-flex p-3 rounded-xl mb-4 bg-gradient-to-br ${
-                    feature.color === 'golden' 
-                      ? 'from-golden/20 to-golden/10' 
-                      : 'from-emerald/20 to-emerald/10'
-                  }`}>
-                    <feature.icon className={`h-6 w-6 ${
-                      feature.color === 'golden' ? 'text-golden' : 'text-emerald'
-                    }`} />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 text-foreground">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="card-feature group">
+              <CardContent className="p-6 text-center">
+                <div className="inline-flex p-3 rounded-xl mb-4 bg-gradient-to-br from-golden/20 to-golden/10">
+                  <Sparkles className="h-6 w-6 text-golden" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Create Posts</h3>
+                <p className="text-sm text-muted-foreground">Design beautiful posts with AI assistance</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="card-feature group">
+              <CardContent className="p-6 text-center">
+                <div className="inline-flex p-3 rounded-xl mb-4 bg-gradient-to-br from-emerald/20 to-emerald/10">
+                  <Users className="h-6 w-6 text-emerald" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-foreground">View & Manage</h3>
+                <p className="text-sm text-muted-foreground">Organize all your content in one place</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="card-feature group">
+              <CardContent className="p-6 text-center">
+                <div className="inline-flex p-3 rounded-xl mb-4 bg-gradient-to-br from-golden/20 to-emerald/20">
+                  <Share2 className="h-6 w-6 text-golden" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Share Instantly</h3>
+                <p className="text-sm text-muted-foreground">Export and share across all platforms</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="card-feature group">
+              <CardContent className="p-6 text-center">
+                <div className="inline-flex p-3 rounded-xl mb-4 bg-gradient-to-br from-emerald/20 to-golden/10">
+                  <Palette className="h-6 w-6 text-emerald" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-foreground">Full Control</h3>
+                <p className="text-sm text-muted-foreground">Edit, delete, and organize as needed</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -225,13 +243,13 @@ const Landing = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/signup">
               <Button className="btn-hero text-lg px-8 py-4">
-                Start Free Trial
+                Start Creating for Free
                 <CheckCircle className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <CheckCircle className="h-4 w-4 text-emerald" />
-              <span>No credit card required</span>
+              <span>100% Free Forever</span>
             </div>
           </div>
         </div>

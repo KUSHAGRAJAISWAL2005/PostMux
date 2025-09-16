@@ -37,24 +37,34 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/features"
+                to="/dashboard"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
-                  isActive("/features")
+                  isActive("/dashboard")
                     ? "text-golden"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                Features
+                Dashboard
               </Link>
               <Link
-                to="/pricing"
+                to="/create"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
-                  isActive("/pricing")
+                  isActive("/create")
                     ? "text-golden"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                Pricing
+                Create
+              </Link>
+              <Link
+                to="/profile"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+                  isActive("/profile")
+                    ? "text-golden"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Profile
               </Link>
             </div>
           </div>
@@ -102,26 +112,37 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/features"
+              to="/dashboard"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
-                isActive("/features")
+                isActive("/dashboard")
                   ? "text-golden"
                   : "text-muted-foreground hover:text-foreground"
               }`}
               onClick={() => setIsOpen(false)}
             >
-              Features
+              Dashboard
             </Link>
             <Link
-              to="/pricing"
+              to="/create"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
-                isActive("/pricing")
+                isActive("/create")
                   ? "text-golden"
                   : "text-muted-foreground hover:text-foreground"
               }`}
               onClick={() => setIsOpen(false)}
             >
-              Pricing
+              Create
+            </Link>
+            <Link
+              to="/profile"
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
+                isActive("/profile")
+                  ? "text-golden"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Profile
             </Link>
             <div className="pt-4 pb-3 border-t border-border">
               <div className="flex items-center space-x-4 px-3">
