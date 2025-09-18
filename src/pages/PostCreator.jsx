@@ -49,7 +49,7 @@ const PostCreator = () => {
     }, 2000);
   };
 
-  const togglePlatform = (platformId: string) => {
+  const togglePlatform = (platformId) => {
     setSelectedPlatforms(prev => 
       prev.includes(platformId) 
         ? prev.filter(id => id !== platformId)
