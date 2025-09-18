@@ -23,7 +23,7 @@ import {
 
 const PostCreator = () => {
   const [activeTab, setActiveTab] = useState("design");
-  const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>(["instagram"]);
+  const [selectedPlatforms, setSelectedPlatforms] = useState(["instagram"]);
   const [captionText, setCaptionText] = useState("");
   const [isGeneratingCaption, setIsGeneratingCaption] = useState(false);
 
