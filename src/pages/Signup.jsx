@@ -187,7 +187,7 @@ const Signup = () => {
                 <Checkbox
                   id="terms"
                   checked={formData.agreeToTerms}
-                  onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked as boolean)}
+                  onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked)}
                   className="border-border data-[state=checked]:bg-golden data-[state=checked]:border-golden"
                 />
                 <Label htmlFor="terms" className="text-sm text-muted-foreground">
