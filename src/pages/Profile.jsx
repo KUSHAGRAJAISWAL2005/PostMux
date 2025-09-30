@@ -77,7 +77,7 @@ const Profile = () => {
     // Here you would save to your backend
   };
 
-  const getActionIcon = (type: string) => {
+  const getActionIcon = (type) => {
     switch (type) {
       case 'create': return <Edit3 className="h-4 w-4" />;
       case 'download': return <Download className="h-4 w-4" />;
@@ -87,7 +87,7 @@ const Profile = () => {
     }
   };
 
-  const getActionColor = (type: string) => {
+  const getActionColor = (type) => {
     switch (type) {
       case 'create': return 'text-emerald';
       case 'download': return 'text-golden';
