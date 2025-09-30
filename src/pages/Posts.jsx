@@ -98,7 +98,7 @@ const Posts = () => {
     post.platform.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case 'Published': return 'bg-emerald text-white';
       case 'Scheduled': return 'bg-golden text-charcoal';
